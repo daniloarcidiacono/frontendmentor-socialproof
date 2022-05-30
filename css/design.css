@@ -1,0 +1,30 @@
+html.desktop {
+  width: 1440px;
+  height: 800px;
+}
+html.desktop .design {
+  display: block;
+  width: 1440px;
+  height: 800px;
+  content: url("../design/desktop-design.jpg");
+}
+html.mobile {
+  width: 375px;
+  height: 1530px;
+}
+html.mobile .design {
+  display: block;
+  width: 375px;
+  height: 1530px;
+  content: url("../design/mobile-design.jpg");
+}
+
+.design {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 255;
+}
+
+/*# sourceMappingURL=design.css.map */

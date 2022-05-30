@@ -1,0 +1,11 @@
+@use '../units';
+
+.attribution { 
+    margin-block: 0;
+    font-size: units.pxToRem(11px);
+    text-align: center;
+    
+    a {
+        color: var(--color-purple);
+    }
+}

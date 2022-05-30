@@ -1,0 +1,27 @@
+// League Spartan font
+@font-face {
+    font-family: League Spartan;
+    src: url('../fonts/League_Spartan/LeagueSpartan-Regular.ttf');
+
+    // CSS custom properties do not work on @font-face rules!
+    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: League Spartan;
+    src: url('../fonts/League_Spartan/LeagueSpartan-Medium.ttf');
+
+    // CSS custom properties do not work on @font-face rules!
+    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: League Spartan;
+    src: url('../fonts/League_Spartan/LeagueSpartan-Bold.ttf');
+
+    // CSS custom properties do not work on @font-face rules!
+    // See https://stackoverflow.com/questions/58752373/custom-css-properties-in-font-face
+    font-weight: bold;
+}

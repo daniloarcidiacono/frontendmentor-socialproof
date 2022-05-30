@@ -1,0 +1,30 @@
+{
+  "name": "profile-card-component-main",
+  "version": "0.1.0",
+  "description": "Solution to the 'Profile card component' challenge on Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server . -c-1",
+    "sass-transpile": "sass styles:css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniloarcidiacono/frontendmentor-profilecard.git"
+  },
+  "keywords": [
+    "Huddle",
+    "Frontend",
+    "Mentor"
+  ],
+  "author": "Danilo Arcidiacono",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniloarcidiacono/frontendmentor-profilecard/issues"
+  },
+  "homepage": "https://github.com/daniloarcidiacono/frontendmentor-profilecard#readme",
+  "devDependencies": {
+    "http-server": "^14.1.0",
+    "sass": "^1.50.1"
+  }
+}

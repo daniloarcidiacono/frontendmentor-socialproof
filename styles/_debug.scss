@@ -1,0 +1,7 @@
+$debug: true !default;
+
+@mixin outlined() {
+    @if $debug {
+        outline: 1px solid orange;
+    }
+}
