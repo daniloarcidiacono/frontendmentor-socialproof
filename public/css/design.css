@@ -1,0 +1,1 @@
+html.desktop,html.desktop .design{height:800px;width:1440px}html.desktop .design{content:url(../assets/design/desktop-design.jpg);display:block}html.mobile,html.mobile .design{height:1530px;width:375px}html.mobile .design{content:url(../assets/design/mobile-design.jpg);display:block}.design{display:none;left:0;position:absolute;top:0;z-index:255}

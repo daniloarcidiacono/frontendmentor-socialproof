@@ -15,8 +15,8 @@
 }
 
 html {
-    @include design(desktop, 1440px, 800px, '../design/desktop-design.jpg');
-    @include design(mobile, 375px, 1530px, '../design/mobile-design.jpg');
+    @include design(desktop, 1440px, 800px, '../assets/design/desktop-design.jpg');
+    @include design(mobile, 375px, 1530px, '../assets/design/mobile-design.jpg');
 }
 
 .design {
