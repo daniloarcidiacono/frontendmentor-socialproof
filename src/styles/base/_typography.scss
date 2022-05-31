@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+body {
+    font-family: League Spartan;
+    font-weight: var(--font-weight-normal);
+    font-size: px2rem(15px);
+}

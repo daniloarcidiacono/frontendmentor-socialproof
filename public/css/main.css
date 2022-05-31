@@ -1,1 +1,145 @@
-@font-face{font-family:League Spartan;font-weight:400;src:url(../assets/fonts/League_Spartan/LeagueSpartan-Regular.ttf)}@font-face{font-family:League Spartan;font-weight:500;src:url(../assets/fonts/League_Spartan/LeagueSpartan-Medium.ttf)}@font-face{font-family:League Spartan;font-weight:700;src:url(../assets/fonts/League_Spartan/LeagueSpartan-Bold.ttf)}.attribution{font-size:.6875rem;margin-block:0;text-align:center}.attribution a{color:var(--color-purple)}:root{--color-very-dark-magenta:#502050;--color-soft-pink:#ee68a4;--color-dark-grayish-magenta:#937b92;--color-light-grayish-magenta:#f7f2f7;--color-white:#fff;--color-purple:#3e52a3;--font-weight-normal:400;--font-weight-medium:400;--font-weight-bold:700}html{height:100%;width:100%}body{font-family:League Spartan;font-size:.9375rem;font-weight:var(--font-weight-normal)}a[target=_blank]:after{content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);margin:0 3px 0 5px}
+/* From https://github.com/hankchizljaw/modern-css-reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --clr-primary-very-dark-magenta: hsl(300deg, 43%, 22%);
+  --clr-primary-soft-pink: hsl(333deg, 80%, 67%);
+  --clr-neutral-dark-grayish-magenta: hsl(303deg, 10%, 53%);
+  --clr-neutral-light-grayish-magenta: hsl(300deg, 24%, 96%);
+  --clr-neutral-white: hsl(0deg, 0%, 100%);
+  --clr-neutral-purple: hsl(228deg, 45%, 44%);
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+@font-face {
+  font-family: League Spartan;
+  src: url("../assets/fonts/League_Spartan/LeagueSpartan-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: League Spartan;
+  src: url("../assets/fonts/League_Spartan/LeagueSpartan-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: League Spartan;
+  src: url("../assets/fonts/League_Spartan/LeagueSpartan-Bold.ttf");
+  font-weight: bold;
+}
+body {
+  font-family: League Spartan;
+  font-weight: var(--font-weight-normal);
+  font-size: 0.9375rem;
+}
+
+.attribution {
+  margin-block: 0;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-purple);
+}
+
+html.desktop {
+  width: 1440px;
+  height: 800px;
+}
+html.desktop .design {
+  display: block;
+  width: 1440px;
+  height: 800px;
+  content: url("../assets/design/desktop-design.jpg");
+}
+html.mobile {
+  width: 375px;
+  height: 1530px;
+}
+html.mobile .design {
+  display: block;
+  width: 375px;
+  height: 1530px;
+  content: url("../assets/design/mobile-design.jpg");
+}
+
+.design {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 255;
+}
