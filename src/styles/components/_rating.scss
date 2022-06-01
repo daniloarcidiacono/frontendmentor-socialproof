@@ -1,0 +1,27 @@
+@use '../abstracts/mixins' as *;
+
+.rating {
+    @include outlined();
+    
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.6rem;
+    padding-block: 0.8rem;
+    margin-block: 1rem;
+    border-radius: 8px;
+    background-color: var(--clr-neutral-light-grayish-magenta);
+    
+    &__stars {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__text {
+        font-size: 1.05rem;
+        text-align: center;
+        color: var(--clr-primary-very-dark-magenta);
+    }
+}

@@ -1,0 +1,49 @@
+@use '../abstracts/mixins' as *;
+
+.review {
+    @include outlined();
+
+    padding: 2rem;
+    margin-block: 1rem;
+    border-radius: 8px;
+    background-color: var(--clr-primary-very-dark-magenta);
+
+    &__header {    
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5rem;
+        padding-block: 0.5rem;
+    }
+
+    &__avatar {
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__author {
+        letter-spacing: 0.02rem;
+        line-height: 1.2rem;
+    }
+
+    &__name {
+        font-size: 1rem;
+        color: var(--clr-neutral-white);
+    }
+
+    &__status {
+        font-size: 1rem;
+        font-weight: normal;
+        color: var(--clr-primary-soft-pink);
+    }
+
+    &__text {
+        margin-block-start: 1rem;
+        font-size: 1rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.4rem;
+        color: var(--clr-neutral-white);
+    }
+}
