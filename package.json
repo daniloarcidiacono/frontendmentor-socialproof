@@ -6,21 +6,24 @@
   "scripts": {
     "start": "npm-run-all clean copy --parallel watch serve",
     "serve": "browser-sync start --server public --files public",
+    "serve:static": "http-server public -c-1",
     "watch": "npm-run-all --parallel watch:*",
     "watch:assets": "onchange \"src/assets/**/*\" -- npm run copy:assets",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
+    "watch:js": "onchange \"src/**/*.js\" -- npm run copy:js",
     "watch:sass": "sass --no-source-map --watch src/styles:public/css",
     "copy": "npm-run-all --parallel copy:*",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
+    "copy:js": "copyfiles -u 1 ./src/js/**/*.js public",
     "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
     "clean": "rimraf public",
     "build": "npm-run-all clean copy:html build:*",
     "build:sass": "sass --no-source-map src/styles:public/css",
-    "postbuild": "postcss public/css/**/*.css -u autoprefixer cssnano -r --no-map"
+    "postbuild": "postcss public/css/**/*.css -u autoprefixer cssnano -r --no-map"    
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daniloarcidiacono/frontendmentor-profilecard.git"
+    "url": "git+https://github.com/daniloarcidiacono/frontendmentor-socialproof.git"
   },
   "keywords": [
     "Huddle",
@@ -30,14 +33,15 @@
   "author": "Danilo Arcidiacono",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/daniloarcidiacono/frontendmentor-profilecard/issues"
+    "url": "https://github.com/daniloarcidiacono/frontendmentor-socialproof/issues"
   },
-  "homepage": "https://github.com/daniloarcidiacono/frontendmentor-profilecard#readme",
+  "homepage": "https://github.com/daniloarcidiacono/frontendmentor-socialproof#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "browser-sync": "^2.27.10",
     "copyfiles": "^2.4.1",
     "cssnano": "^5.1.10",
+    "http-server": "^14.1.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
     "postcss-cli": "^9.1.0",

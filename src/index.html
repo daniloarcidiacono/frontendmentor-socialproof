@@ -6,34 +6,98 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
     <title>Frontend Mentor | Social proof section</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/design.js" type="text/javascript"></script>
   </head>
   <body>
-    <img class="design" alt="Design">
-    <main>
-      10,000+ of our users love our products.
-
-      We only provide great products combined with excellent customer service.
-      See what our satisfied customers are saying about our services.
-      
-      Rated 5 Stars in Reviews
-      Rated 5 Stars in Report Guru
-      Rated 5 Stars in BestTech
-      
-      Colton Smith 
-      Verified Buyer
-      "We needed the same printed design as the one we had ordered a week prior.
-      Not only did they find the original order, but we also received it in time.
-      Excellent!"
-      
-      Irene Roberts 
-      Verified Buyer
-      "Customer service is always excellent and very quick turn around. Completely
-      delighted with the simplicity of the purchase and the speed of delivery."
-      
-      Anne Wallace 
-      Verified Buyer
-      "Put an order with this company and can only praise them for the very high
-      standard. Will definitely use them again and recommend them to everyone!"
+    <img class="design" alt="Design" title="Press CTRL+D to toggle">
+    <header>
+      <h1 class="header__title">10,000+ of our users love our products.</h1>
+      <h2 class="header__subtitle">
+        We only provide great products combined with excellent customer service.
+        See what our satisfied customers are saying about our services.
+      </h2>
+    </header>
+    <main>      
+      <ul class="ratings">
+        <li class="rating">
+          <div class="rating__stars">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+          </div>
+          <h1 class="rating__text">Rated 5 Stars in ratings</h1>
+        </li>
+        <li class="rating">
+          <div class="rating__stars">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+          </div>
+          <h1 class="rating__text">Rated 5 Stars in Report Guru</h1>
+        </li>
+        <li class="rating">
+          <div class="rating__stars">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+            <img src="assets/images/icon-star.svg" alt="Star icon">
+          </div>
+          <h1 class="rating__text">Rated 5 Stars in BestTech</h1>
+        </li>
+      </ul>          
+      <ul class="reviews">
+        <li>
+          <article class="review">
+            <header class="review__header">
+              <img class="review__avatar" src="assets/images/image-colton.jpg" alt="Colton Smith Picture">
+              <div class="review__author">
+                <h1 class="review__name">Colton Smith</h1>
+                <h2 class="review__status">Verified Buyer</h2>
+              </div>
+            </header>
+            <blockquote class="review__text">
+              "We needed the same printed design as the one we had ordered a week prior.
+              Not only did they find the original order, but we also received it in time.
+              Excellent!" 
+            </blockquote>  
+          </article>
+        </li>
+        <li>
+          <article class="review">
+            <header class="review__header">
+              <img class="review__avatar" src="assets/images/image-irene.jpg" alt="Irene Roberts Picture">
+              <div class="review__author">
+                <h1 class="review__name">Irene Roberts</h1>
+                <h2 class="review__status">Verified Buyer</h2>
+              </div>
+            </header>
+            <blockquote class="review__text">
+              "Customer service is always excellent and very quick turn around. Completely
+              delighted with the simplicity of the purchase and the speed of delivery."
+            </blockquote>
+          </article>
+        </li>
+        <li>
+          <article class="review">
+            <header class="review__header">
+              <img class="review__avatar" src="assets/images/image-anne.jpg" alt="Anne Wallace Picture">
+              <div class="review__author">
+                <h1 class="review__name">Anne Wallace</h1>
+                <h2 class="review__status">Verified Buyer</h2>
+              </div>
+            </header>
+            <blockquote class="review__text">
+              "Put an order with this company and can only praise them for the very high
+              standard. Will definitely use them again and recommend them to everyone!"
+            </blockquote>
+          </article>          
+        </li>
+      </ul>  
     </main>
     <footer>
       <p class="attribution">
