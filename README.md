@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/daniloarcidiacono/frontendmentor-socialproof)
-- Live Site URL: [Github Pages](https://daniloarcidiacono.github.io/frontendmentor-socialproof/)
+- Live Site URL: [Github Pages](https://daniloarcidiacono.github.io/frontendmentor-socialproof/public/)
 
 ## My process
 
