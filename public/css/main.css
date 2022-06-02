@@ -227,7 +227,7 @@ body {
   grid-template-areas: "header" "ratings" "reviews" "footer";
   padding-inline: 1.5rem;
   padding-block: 4rem;
-  background: url("../../assets/images/bg-pattern-top-mobile.svg") left top/100% no-repeat, url("../../assets/images/bg-pattern-bottom-mobile.svg") left bottom/100% no-repeat;
+  background: url("../assets/images/bg-pattern-top-mobile.svg") left top/100% no-repeat, url("../assets/images/bg-pattern-bottom-mobile.svg") left bottom/100% no-repeat;
 }
 body .header {
   grid-area: header;
@@ -283,7 +283,7 @@ body footer {
     grid-template-columns: 40% 1fr;
     margin-inline: auto;
     max-width: 1160px;
-    background: url("../../assets/images/bg-pattern-top-desktop.svg") left top/40% no-repeat, url("../../assets/images/bg-pattern-bottom-desktop.svg") right bottom/75% no-repeat;
+    background: url("../assets/images/bg-pattern-top-desktop.svg") left top/40% no-repeat, url("../assets/images/bg-pattern-bottom-desktop.svg") right bottom/75% no-repeat;
   }
   body .header {
     padding-block: 2rem;
