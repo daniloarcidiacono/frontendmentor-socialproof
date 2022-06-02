@@ -140,9 +140,9 @@ html.mobile .design {
 .rating {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
   gap: 0.6rem;
-  padding-block: 0.8rem;
-  margin-block: 1rem;
+  padding: 0.9rem;
   border-radius: 8px;
   background-color: var(--clr-neutral-light-grayish-magenta);
 }
@@ -152,6 +152,7 @@ html.mobile .design {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  user-select: none;
 }
 .rating__text {
   font-size: 1.05rem;
@@ -159,9 +160,16 @@ html.mobile .design {
   color: var(--clr-primary-very-dark-magenta);
 }
 
+@media (min-width: 980px) {
+  .rating {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+}
 .review {
   padding: 2rem;
-  margin-block: 1rem;
   border-radius: 8px;
   background-color: var(--clr-primary-very-dark-magenta);
 }
@@ -177,6 +185,7 @@ html.mobile .design {
   border-radius: 100%;
   width: 40px;
   height: 40px;
+  user-select: none;
 }
 .review__author {
   letter-spacing: 0.02rem;
@@ -201,16 +210,11 @@ html.mobile .design {
 
 .attribution {
   margin-block: 0;
-  font-size: 0.6875rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 .attribution a {
-  color: var(--color-purple);
-}
-
-html {
-  width: 100%;
-  height: 100%;
+  color: var(--clr-primary-very-dark-magenta);
 }
 
 a[target=_blank]::after {
@@ -245,21 +249,77 @@ body .header__subtitle {
 }
 body .ratings {
   grid-area: ratings;
-  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
   padding: 0;
+  margin-block: 1rem;
+}
+body .ratings .rating {
+  flex: 1 1 auto;
+  max-width: 400px;
 }
 body .reviews {
   grid-area: reviews;
-  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
   padding: 0;
   margin-block: 1rem;
+}
+body .reviews .review {
+  flex: 1 1 auto;
+  max-width: 350px;
 }
 body footer {
   grid-area: footer;
 }
 
-@media (min-width: 27rem) {
+@media (min-width: 980px) {
   body {
     grid-template-areas: "header ratings" "reviews reviews" "footer footer";
+    grid-template-columns: 40% 1fr;
+    margin-inline: auto;
+    max-width: 1160px;
+    background: url("../../assets/images/bg-pattern-top-desktop.svg") left top/40% no-repeat, url("../../assets/images/bg-pattern-bottom-desktop.svg") right bottom/75% no-repeat;
+  }
+  body .header {
+    padding-block: 2rem;
+    text-align: start;
+  }
+  body .header__title {
+    margin-inline: 0;
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+  body .ratings {
+    flex-flow: column nowrap;
+    margin-block: auto;
+    margin-inline-start: auto;
+  }
+  body .ratings .rating {
+    padding-inline-start: 2rem;
+    padding-inline-end: 3rem;
+    max-width: initial;
+  }
+  body .ratings .rating:nth-child(1) {
+    transform: translateX(-6rem);
+  }
+  body .ratings .rating:nth-child(2) {
+    transform: translateX(-3rem);
+  }
+  body .reviews {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  body .reviews > li:nth-child(2) {
+    margin-block-start: 1rem;
+  }
+  body .reviews > li:nth-child(3) {
+    margin-block-start: 2rem;
   }
 }

@@ -4,7 +4,6 @@
     @include outlined();
 
     padding: 2rem;
-    margin-block: 1rem;
     border-radius: 8px;
     background-color: var(--clr-primary-very-dark-magenta);
 
@@ -21,6 +20,7 @@
         border-radius: 100%;
         width: 40px;
         height: 40px;
+        user-select: none;
     }
 
     &__author {
